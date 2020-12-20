@@ -1,0 +1,54 @@
+.h1 {
+   text-align: center;
+   color: white;
+   background-size: 780px*38px;
+   background-color: rgb(165, 47, 47);
+   margin-top: 28px;
+   margin-left: 8px;
+   margin-right: 1px;
+   padding-left: 270px;
+   font-size: 18px;
+   
+    }
+.img_sunset {      
+      margin-left: 8px;
+      margin-right: 18px;
+}
+.text {
+   font-size: 18px;
+}
+.font_blue {
+   color: #0000ff;
+}
+
+<!--image_container-->
+      
+.image_container {
+      text-align: center;         
+      }
+      .car01 {
+         border: black 4px dotted;
+        margin-left: 214px;  
+      }
+      .car02 {
+         border: black 4px dotted;
+      }
+      .car03 {
+         border: black 4px dotted;
+      }
+      .car04 {
+         border: black 4px dotted;
+      }
+      .car05 {
+         border: black 4px dotted;
+      }
+
+.footer {
+   color: white;    
+   margin-left: 8px;
+   background-size: 780px*20px;
+   background: black;
+   text-align: center;
+   font-size: 20px;
+}      
+
