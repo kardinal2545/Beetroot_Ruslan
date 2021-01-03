@@ -1,0 +1,54 @@
+:root {
+    --font_text: @font-face {
+        font-family: 'fontac51ad8a36d5bab6da11d454bcd06561';
+            
+            src:    url('https://nomail.com.ua/files/eot/ac51ad8a36d5bab6da11d454bcd06561.eot?#iefix') format('embedded-opentype'),
+                    url('https://nomail.com.ua/files/woff/ac51ad8a36d5bab6da11d454bcd06561.woff') format('woff'),
+                    url('https://nomail.com.ua/files/woff2/ac51ad8a36d5bab6da11d454bcd06561.woff2') format('woff2');
+        }
+    
+}
+.header_baner {
+    
+    height: 457px;
+    padding: 108px 0 102px;
+    box-sizing: border-box;
+    
+    
+}
+
+.header_panel {
+    width: 30%;
+    text-align: center;
+    display: inline-block; 
+    font: var(--font_text);    
+}
+.image_panel :hover {
+    background-color: #2a69a6;
+    border-radius: 50px;  
+    border: solid 2px #ffffff;
+}
+
+
+.header_text {
+   
+    padding: 0 35px;
+    line-height: 24px;
+    font-weight: 100px;
+    color: #9d9d9d;
+        
+    
+}
+.header_headline {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font: var(--font_text);
+    
+
+}
+
+
+
+
+
