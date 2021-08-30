@@ -1,0 +1,471 @@
+@import "./normalise";
+$violet: #5474fd;
+$violet2: blue;
+$green: green;
+$white: #fff;
+$grey: #999;
+$white-grey: #e8e8e8;
+$white-grey2: #fefefe;
+$dark-grey: #333333;
+$dark-opacity: #232323;
+$dark: #232323;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: $white;
+  font-family: "Josefin Sans", sans-serif;
+  outline: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+}
+
+
+.section {
+  .blue-btn {
+    width: 225px;
+    height: 60px;
+    background-color: $violet;
+    border: none;
+    font-size: 16px;
+    font-family: "Aleo" , serif;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $violet2;
+    }
+    
+  }
+
+  /* Style for "Bhromaon" */
+
+  &-main {
+    padding: 270px 0 135px 0;
+    background: url("../img/main-bg.png") no-repeat;
+    background-size: cover;  
+    
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 50px;
+
+      &__title {
+        font-size: 48px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        line-height: 26px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      &__subtitle {
+        font-size: 22px;
+        letter-spacing: 6px;
+        line-height: 26px;
+        font-weight: 300;
+      }
+    }
+
+    .search-form {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 120px;
+
+      &__input {
+        width: 100%;
+        max-width: 500px;
+        height: 60px;
+        background-color: $white;
+        border: none;
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 3px;
+        line-height: 26px;
+        font-weight: 300;
+        transition: all 500ms ease;
+
+        &::placeholder {
+          font-size: 14px;
+          letter-spacing: 3px;
+          line-height: 26px;
+          color: $grey;
+          font-weight: 300;
+        }
+
+        
+      }
+
+      &__btn {
+        width: 100%;
+        max-width: 150px;
+        height: 60px;
+        background-color: $violet;
+        border: 1px solid $white;
+        font-family: "Aleo", serif;
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 26px;
+        font-weight: 400;
+        text-transform: uppercase;
+        transition: all 500ms ease;
+
+        &:hover {
+          background-color: $violet2;
+        }
+        
+       
+      }
+    }
+
+    .scroll-down {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+
+      &__text {
+        font-size: 11px;
+        letter-spacing: 3px;
+        line-height: 26px;
+        margin-bottom: 15px;
+      }
+
+      &__arrow {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  /* Style for "Menu" */
+
+  &-menu {
+    padding: 27px 0 34px 0;
+    background-color: $violet;
+
+    .container {
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .title {
+      font-size: 24px;
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      
+    }
+
+    .menu {
+      &__item {
+        font-size: 14px;
+        line-height: 26px;
+        font-family: "Aleo", serif;
+        margin-left: 40px;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+  }
+
+  /* Style for "Why Choose" */
+  &-chooseus {
+    padding: 120px 0;
+    background: url('../img/choose_us-bg.png');
+    background-size: cover; 
+    
+    .content-block {
+      width: 50%;
+      padding: 50px 20px 0 0;
+
+      &__title {
+               
+        color: $white;
+        font-family: "Aleo" , serif;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        margin-bottom: 62px;       
+      
+      }
+      &__paragraph {
+        color: $white-grey;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 1.6px;
+        margin-bottom: 45px;
+      }
+    }
+
+    .imeges-block {
+     width: 50%;
+     padding-left: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     
+     &__item {
+       margin-bottom: 5px;
+       
+       &--right {
+         margin-left: auto;
+       }
+     }
+    }    
+  }
+  
+  
+  /* infosvg */
+  &-infosvg {
+    background-color: $dark-grey;
+    padding: 80px 0 120px 0;
+    
+
+    .container {
+      justify-content: center;
+    }
+    .infosvg-item {
+      margin-right: 170px;
+      display: flex;
+      
+
+      &__icon {
+        font-size: 36px;
+        
+        padding-right: 30%;
+
+      }
+     
+
+    }
+    
+        
+    
+  }
+
+  /* relaxation */
+  &-relaxation {
+    padding: 230px 0 100px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &--hotel {
+      background-image: url(../img/hotel.png);
+    }
+    &--sea {
+      background-image: url(../img/sea.png);
+      
+    }
+    .content-block {
+      max-width: 540px;
+      background-color: $dark-opacity;
+      opacity: 0.8;
+      padding: 50px 70px 50px 30px;
+
+             
+
+    
+      
+      &__title {
+        width: 50px;
+        height: 19px;
+        color: $white-grey;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        letter-spacing: 1.5px;
+        margin-bottom: 29px;
+      }
+      
+      &__subtitle {        
+        width: 211px;
+        height: 17px;
+        color: $white-grey2;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        text-transform: uppercase;
+        margin-bottom: 29px;        
+      }
+      &__paragraph {
+        
+        width: 478px;
+        height: 68px;
+        color: $white-grey;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        margin-bottom: 48px;        
+      }
+    }
+  }
+  
+  /* travel */
+
+  &-travel {
+    padding: 120px 0 200px 0;
+    background: url('../img/travel-bg.png') no-repeat;
+    background-size: cover;
+    background-position: top left;
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title {
+      font-size: 36px;
+      line-height: 26px;
+      font-family: "Aleo", serif;
+      margin-bottom: 92px;
+    }
+
+    .content-block {
+      width: 100%;
+      display: flex;
+
+      &__text {
+        background-color: $dark-grey;
+        padding: 52px 50px 0 60px;
+      }
+
+      &__title {
+        font-size: 20px;
+        line-height: 26px;
+        color: $white;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+      }
+
+      &__paragraph {
+        font-size: 16px;
+        line-height: 1.35;
+        color: $white-grey;
+
+        .fas {
+          color: $violet;
+          position: relative;
+          top: -12px;
+        }
+      }
+    }    
+  }
+
+
+  /* contact */
+    
+  &-contact {
+    background-color: $dark;
+    padding: 120px 0 54px 0;
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 30px;
+
+      &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.08;
+        letter-spacing: 4.8px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+
+      &__subtitle {
+        font-size: 16px;
+        line-height: 1.63;
+        letter-spacing: 1.3px;
+      }
+    }
+
+    /* КЛАСС СОЦСЕТИ */
+
+  }
+  
+}
+
+@media screen and (max-width: 1200px) {
+  .section {
+    &-main {
+      padding: 200px 0 80px 0;
+
+      .logo {
+        margin-bottom: 40px;
+      }
+
+      .search-form {
+        margin-bottom: 90px;
+      }
+
+      .scroll-down {
+        &__text {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .section {
+    &-main {
+      padding: 50px 0 30px 0;
+
+      .logo {
+        margin-bottom: 25px;
+
+        &__title {
+          font-size: 40px;
+          line-height: 20px;
+        }
+
+        &__subtitle {
+          font-size: 18px;
+          letter-spacing: 5px;
+          line-height: 18px;
+        }
+      }
+
+      .search-form {
+        margin-bottom: 20px;
+
+        &__input {
+          font-size: 14px;
+          letter-spacing: 1px;
+          height: 50px;
+
+          &::placeholder {
+            font-size: 12px;
+            letter-spacing: 1px;
+          }
+        }
+
+        &__btn {
+          max-width: 100px;
+          font-size: 12px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
