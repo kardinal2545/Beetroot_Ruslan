@@ -1,0 +1,196 @@
+.works {
+    width: 100%;
+    height: 1000px;
+    background: url("../img/DeathtoStock_Wired3.png");
+    // opacity: 0.5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    // position: relative;
+    // margin-top: 100px;
+
+    &__title {
+        // content: url(../img/Icon-Works.png);
+        color: #fefefb;
+        font-family: "Proxima Nova - Semibold";
+        font-size: 36px;
+        // letter-spacing: normal;
+        text-align: center;
+        text-transform: uppercase;
+        // position: relative;
+        font-weight: 400;
+        // line-height: normal;
+        // margin-top: 10%;
+        &--img {
+            margin-top: 5%;
+        }
+    }
+    @media only screen and (max-width: 1400px) {
+        width: 1200px;
+    }
+    @media only screen and (max-width: 1200px) {
+        width: 1200px;
+    }
+    @media only screen and (max-width: 992px) {
+        width: 990px;
+    }
+    @media only screen and (max-width: 768px) {
+        width: 768px;
+    }
+    @media only screen and (max-width: 576px) {
+        width: 576px;
+    }
+}
+
+/* SWIPER */
+.swiper-container {
+    width: 100%;
+    padding-top: 106px;
+    padding: 50px;
+    /* Style for "Campofrío_" */
+    width: 730px;
+    height: 546px;
+
+    @media only screen and (max-width: 1400px) {
+        width: 650px;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        width: 600px;
+    }
+    @media only screen and (max-width: 992px) {
+        width: 530px;
+    }
+    @media only screen and (max-width: 768px) {
+        width: 450px;
+    }
+    @media only screen and (max-width: 576px) {
+        width: 350px;
+    }
+}
+.swiper-wrapper {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide--slide1 {
+    background: url(../img/Campofrío_Home_slick1.png);
+    margin-left: -10%;
+    @media only screen and (max-width: 992px) {
+        background: url(../img/adaptive/Campofrío_Home_slick1.png);
+        width: 600px;
+        height: 449px;
+    }
+    @media only screen and (max-width: 768px) {
+        background: url(../img/adaptive/Campofrío_Home_slick1.png);
+        width: 500px;
+        height: 374px;
+    }
+    @media only screen and (max-width: 576px) {
+        background: url(../img/adaptive/Campofrío_Home_slick1.png);
+        width: 400px;
+        height: 299px;
+    }
+}
+
+.swiper-slide--slide2 {
+    background: url(../img/Campofrío_Home_slick2.png);
+    @media only screen and (max-width: 992px) {
+        background: url(../img/adaptive/Campofrío_Home_slick2.png);
+        width: 600px;
+        height: 449px;
+    }
+    @media only screen and (max-width: 768px) {
+        background: url(../img/adaptive/Campofrío_Home_slick2.png);
+        width: 500px;
+        height: 374px;
+    }
+    @media only screen and (max-width: 576px) {
+        background: url(../img/adaptive/Campofrío_Home_slick2.png);
+        width: 400px;
+        height: 299px;
+    }
+}
+
+.button {
+    padding: 18px 52px;
+    color: #7d7a7c;
+    font-family: "PT Sans";
+    font-size: 20px;
+
+    font-style: italic;
+    text-align: center;
+
+    border: 2px solid #7d7a7c;
+    transition: all 0.3s linear;
+    display: block;
+    margin: 93px auto 0;
+    background: none;
+    border-color: #fefefb;
+    color: #fefefb;
+}
+
+//   MODAL
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: -50%;
+    background-color: #fff;
+    width: 600px;
+    max-width: 75rem;
+    min-height: 20rem;
+    padding: 1rem;
+    border-radius: 3px;
+    opacity: 0;
+    overflow-y: auto;
+    visibility: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backface-visibility: hidden;
+    transform: scale(1.2);
+}
+.modal .close-modal {
+    color: white;
+    position: absolute;
+    cursor: pointer;
+    top: 25px;
+    right: 25px;
+    opacity: 0;
+    z-index: 100;
+    transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+    transition-delay: 0.3s;
+}
+.modal .close-modal-svg {
+    width: 2.75em;
+    height: 2.75em;
+}
+
+.modal .modal-content {
+    opacity: 0;
+
+    backface-visibility: hidden;
+
+    transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+    transition-delay: 0.3s;
+}
+.modal.active {
+    visibility: visible;
+    opacity: 1;
+
+    transform: scale(1);
+}
+.modal.active .modal-content {
+    opacity: 1;
+}
+.modal.active .close-modal {
+    transform: translateY(10px);
+    opacity: 1;
+}

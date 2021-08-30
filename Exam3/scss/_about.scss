@@ -1,0 +1,106 @@
+.about {
+    margin-top: 3%;
+    padding-top: 124px;
+    padding-bottom: 121px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Proxima Nova - Semibold";
+    font-weight: 400;
+    font-size: 20px;
+    width: 100%px;
+    // height: 800px;
+    background-color: #ebebeb;
+    text-align: center;
+    color: #665f60;
+    @media only screen and (max-width: 1400px) {
+        width: 1200px;
+    }
+    @media only screen and (max-width: 1200px) {
+        width: 1200px;
+    }
+    @media only screen and (max-width: 992px) {
+        width: 992px;
+
+        background-position: center;
+    }
+    @media only screen and (max-width: 768px) {
+        width: 768px;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+    &__img {
+        background: url(../img/DeathtoStock_Wired8.png);
+        width: 380px;
+        height: 555px;
+        // opacity: 0.5;
+        margin-left: 5%;
+
+        @media only screen and (max-width: 1200px) {
+            margin-right: 100px;
+        }
+        @media only screen and (max-width: 992px) {
+            margin-right: 80px;
+            height: 400px;
+            width: 274px;
+        }
+        @media only screen and (max-width: 786px) {
+            margin-right: 0px;
+        }
+        @media only screen and (max-width: 568px) {
+            width: 171px;
+            height: 250px;
+        }
+
+        &--icon {
+            margin-top: 75px;
+            margin-bottom: 44px;
+            /* Style for "Icon-About" */
+            width: 50px;
+            height: 54px;
+
+            @media only screen and (max-width: 768px) {
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+            @media only screen and (max-width: 568px) {
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+        }
+        &--text-layer {
+            font-family: "PT Sans";
+            font-weight: 400;
+            font-size: 36px;
+            color: white;
+            line-height: 47.13px;
+            text-transform: uppercase;
+        }
+    }
+    &__text {
+        max-width: 633px;
+        margin-top: 78px;
+        position: relative;
+        height: auto;
+        margin-right: 30%;
+        &--color {
+            color: dark;
+            font-weight: 600;
+        }
+        &--hide {
+            display: none;
+        }
+        &--toogle {
+            /* Style for "Learn More" */
+            width: 91px;
+            height: 15px;
+            color: #7d7a7c;
+            font-family: "PT Sans";
+            font-size: 20px;
+            font-style: italic;
+
+            text-align: right;
+        }
+    }
+}

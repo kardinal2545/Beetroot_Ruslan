@@ -1,0 +1,148 @@
+.services {
+    /* Style for "Desc-tile-" */
+    width: 100%;
+    height: 799px;
+    background-color: #ebebeb;
+    @media only screen and (max-width: 1400px) {
+        width: 1200px;
+        
+    }
+    @media only screen and (max-width: 1200px) {
+        width: 1200px;
+    }
+    @media only screen and (max-width: 992px) {
+        width: 992px;
+    }
+    @media only screen and (max-width: 768px) {
+        width: 768px;
+    }
+    @media only screen and (max-width: 576px) {
+        width: 576px;
+    }
+}
+.services-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 1170px;
+    max-height: 100%;
+    // margin: 0 auto;
+    // @media only screen and (max-width: 768px) {
+    //     grid-template-columns: 1fr 1fr;
+    //     // grid-template-rows: 1fr 1fr 1fr;
+    //     max-width: 767px;
+    // }
+    // @media only screen and (max-width: 576px) {
+    //     display: grid;
+    //     grid-template-columns: 1fr;
+    //     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    //     max-width: 576px;
+    // }
+    &__block-grey {
+        /* Style for "Rectangle" */
+        width: 380px;
+        height: 400px;
+        background-color: #dbdbdb;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__block-grey1 {
+        /* Style for "Rectangle" */
+        width: 380px;
+        height: 400px;
+        // margin-top: -60px;
+        background-color: #dbdbdb;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__block {
+        /* Style for "Rectangle" */
+        width: 380px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        &--title {
+            width: 210px;
+            height: 17px;
+            margin-bottom: 21px;
+            font-family: "PT Sans";
+            font-weight: 700;
+            font-size: 24px;
+            text-align: center;
+            // text-transform: uppercase;
+            color: #665f60;
+            @media only screen and (max-width: 768px) {
+                font-size: 18px;
+                padding: 0 10px;
+            }
+        }
+        &--slogan {
+            /* Style for "Cras matti" */
+            width: 193px;
+            height: 39px;
+            color: #665f60;
+            font-family: "PT Sans";
+            font-size: 18px;
+            font-style: italic;
+            text-align: center;
+            padding-top: 5%;
+            @media only screen and (max-width: 768px) {
+                padding: 0 10px;
+            }
+        }
+    }
+    &__block-serv {
+        background: url(../img/unsplash_523ae1f5502d6_1.png);
+        background-repeat: no-repeat;
+        /* Style for "unsplash_5" */
+        width: 410px;
+        // height: 799px;
+        // opacity: 0.5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 3;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 116px;
+        &--icon-title {
+            /* Style for "OUR SERVIC" */
+            width: 247px;
+            height: 27px;
+            color: #fefcfd;
+            font-family: "ProximaNova";
+            font-size: 36px;
+            font-weight: 400;
+            text-align: right;
+            text-transform: uppercase;
+            @media only screen and (max-width: 768px) {
+                font-size: 18px;
+                padding: 0 10px;
+                text-align: center;
+            }
+        }
+        &--icon-slogan {
+            /* Style for "“Nullam qu" */
+            width: 346px;
+            height: 59px;
+            color: #fefcfd;
+            font-family: "PT Sans";
+            font-size: 18px;
+            font-style: italic;
+            text-align: center;
+            font-weight: 700;
+            padding-top: 10%;
+            @media only screen and (max-width: 768px) {
+                padding: 0 10px;
+            }
+        }
+    }
+}
